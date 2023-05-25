@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <style>
+        .sample-slider {
+            width: 60vw;
+            height: 33vw;
+        }
+        
+        .sample-slider img {
+            width: 100%;
+        }
+        
+        .sample-slider [class^=swiper-button] {
+            transform: rotate(90deg);
+            top: initial;
+            left: initial;
+            right: 10px;
+            margin: 0;
+        }
+        
+        .sample-slider .swiper-button-prev {
+            top: 0;
+        }
+        
+        .sample-slider .swiper-button-next {
+            bottom: 0;
+        }
+        
+        .sample-slider .swiper-pagination {
+            right: 20px;
+        }
+    </style>
+
+
+    <div class="swiper sample-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/galeria1.png"></div>
+            <div class="swiper-slide"><img src="./img/galeria2.png"></div>
+            <div class="swiper-slide"><img src="./img/galeria3.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script>
+        const swiper = new Swiper('.sample-slider', {
+            loop: true, //loop
+            direction: "vertical", //slide direction
+            autoplay: { //autoplay
+                delay: 2000,
+            },
+            pagination: { //pagination(dots)
+                el: '.swiper-pagination',
+            },
+            navigation: { //navigation(arrows)
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+
+</html>

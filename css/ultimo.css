@@ -39,7 +39,13 @@
     }
     
     .img {
-        display: grid;
+        display: block;
+    }
+    
+    .img--logo {
+        display: flex;
+        position: left;
+        margin: 0;
     }
     
     .list {
@@ -92,8 +98,9 @@
     }
     
     .icon:hover {
-        font-size: 3rem;
         color: #5edb5e;
+        align-items: center;
+        justify-content: center;
     }
     
     .icon--menu {
@@ -124,6 +131,7 @@
     
     .flexbox--header {
         align-items: center;
+        justify-content: center;
         justify-content: space-between;
     }
     /*fin list menus*/
@@ -133,7 +141,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 900px;
+        max-width: 1020px;
         min-height: 500px;
         margin: 0 auto;
         background-image: url("../img/modi.png");
@@ -164,8 +172,7 @@
     }
     
     .column-1 {
-        flex-basis: 4rem;
-        width: 4rem;
+        display: flex;
         background-color: rgba(0, 0, 0, 0.415);
         writing-mode: vertical-rl;
         text-orientation: upright;
@@ -176,8 +183,31 @@
         padding: 0;
         gap: 2rem;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
     }
     
+    .carousel-control-prev,
+    .carousel-control-next {
+        transform: rotate(90deg);
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 50%;
+        transform-origin: center center;
+        z-index: 1;
+    }
+    
+    .carousel-control-prev {
+        left: 0;
+    }
+    
+    .carousel-control-next {
+        left: 0;
+    }
+    /*
     .redes {
         display: flex;
         color: white;
@@ -193,30 +223,34 @@
     }
     
     .column-2 {
-        flex-basis: 15rem;
-        width: 25rem;
+        display: flex;
         background-color: green;
         color: #090909;
         margin: 0;
     }
     
     .column-3 {
-        flex-basis: 25rem;
-        width: 60rem;
+        display: flex;
         background-color: aqua;
         margin: 0;
         position: static;
     }
     
-    .column-4 {
-        flex-basis: 4rem;
-        width: 4rem;
+    */
+    /* .column-4 {
+        display: flex;
         background-color: #ff0000;
         margin: 0;
         writing-mode: vertical-rl;
         text-orientation: upright;
-        white-space: nowrap;
-        line-height: 1;
+    }
+    */
+    
+    .button {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        align-items: center;
+        justify-content: center;
     }
     /*fin  main*/
     
@@ -226,7 +260,7 @@
         margin: 0;
         flex-wrap: wrap;
     }
-    
+    /*
     .column--01 {
         width: 4rem;
     }
@@ -238,6 +272,7 @@
     .column--03 {
         width: 60rem;
     }
+    */
     /** 
 .text {
     writing-mode: vertical-rl;

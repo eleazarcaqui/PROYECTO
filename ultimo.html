@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/ultimo.css">
     <title>Solst </title>
 </head>
@@ -50,94 +51,148 @@
         <article class="article">
             <h1 class="section">PERSONAJES</h1>
             <div class="container-dos">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="row g-0">
+                        <div class="col-md-1 border border-primary d-flex flex-column  gap-3">
 
-                <div class="column column-1">
-                    <div class="list__redes">
-                        <a href="https://www.youtube.com/" target="_blank" class="redes"><i class="bi bi-youtube"></i></a>
-                        <a href="https://twitter.com/" target="_blank" class="redes"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank" class="redes"><i class="bi bi-instagram"></i></a>
-                    </div>
-                    <div>
-                        <a href="#" class="scroll">Scroll</a>
-                    </div>
-                </div>
-                <div class="column column-2">
-                    <a href="#">Nebula
-                    <img src="img2/Nebula1.webp" alt="nebula" height="100" width="300">
-                    </a>
-                    <a href="#">War Machine
-                    <img src="img2/War Machine1.webp" alt="warMachine" height="100" width="300">
-                    </a>
-                    <a href="#">Mantis
-                    <img src="img2/Mantis.webp" alt="mantis" height="100" width="300">
-                   </a>
-                    <a href="#">Winter Soldier
-                    <img src="img2/winter soldier1.webp" alt="winter" height="100" width="300">
-                   </a>
-                    <a href="#">Wong
-                    <img src="img2/wong1.webp" alt="wong" height="100" width="300">
-                </a>
-                </div>
-                <div class="column column-3">
-                    <h3>Nebula</h3>
-                    <p>Nebula es la hija adoptiva de Thanos y se ha criado junto a Gamora como si fuesen hermanas. Nebula aparece a bordo de la nave de Ronan el Acusador, pidiéndole el puesto de la misión de recuperar el orbe, pero muestra cierta hostilidad
-                        cuando Ronan elige a Gamora en su lugar. Posteriormente, cuando Ronan planea destruir a Thanos, Nebula se alía con él prometiéndole asesinarlo y destruir miles de planetas. Después de la llegada de los Guardianes a la nave de Ronan
-                        en Xandar, Nebula y Gamora se enfrentan en una batalla, pero Nebula escapa en una cápsula espacial, después de darse cuenta de que Ronan pierde la batalla.</p>
-                    <img src="img2/nebula2.webp" alt="" width="300" height="500">
-                </div>
-                <d class="column column-4">
-                    <a href="#">portador</a>
-                    <a href="#">historia</a>
-                    <a href="#">poster</a>
-                    <a href="#">diseño</a>
+                            <div class="list__redes">
+                                <a href="https://www.youtube.com/" target="_blank" class="redes"><i
+                                    class="bi bi-youtube"></i></a>
+                                <a href="https://twitter.com/" target="_blank" class="redes"><i
+                                    class="bi bi-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" class="redes"><i
+                                 class="bi bi-instagram"></i></a>
+                                <div class="scroll d-flex align-center">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                  </button>
+                                    <a href="#" class="">Scroll</a>
+                                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next"> 
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                            </div>
 
-                </d </div>
+                        </div>
+                        <div class="col-md-3 border border-primary d-flex flex-column align-items-center gap-0">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="#" id="#nebula">Nebula
+                                         <img src="img2/Nebula1.webp" alt="nebula" height="150" width="255" class="">
+                                    </a>
+                                    <!-- <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <p>Nebula es la hija adoptiva de Thanos y se ha criado junto a Gamora como si fuesen hermanas. Nebula aparece a bordo de la nave de Ronan el Acusador, pidiéndole el puesto de la misión de recuperar el orbe, pero
+                                                muestra cierta hostilidad cuando Ronan elige a Gamora en su lugar. Posteriormente, cuando Ronan planea destruir a Thanos, Nebula se alía con él prometiéndole asesinarlo y destruir miles de planetas.</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <img src="img2/nebula2.webp" alt="" width="300" height="500">
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                                <div class="carousel-item active">
+                                    <a href="#" id="war">War Machine
+                                        <img src="img2/War Machine1.webp" alt="warMachine" height="150" width="255" class="">
+                                    </a>
+                                </div>
+                                <div class="carousel-item active">
+                                    <a href="#">Mantis
+                                        <img src="img2/Mantis.webp" alt="mantis" height="150" width="255" class="">
+                                    </a>
+                                </div>
+                                <div class="carousel-item active">
+                                    <a href="#">Winter Soldier
+                                      <img src="img2/winter soldier1.webp" alt="winter" height="150" width="255" class="">
+                                    </a>
+                                </div>
+                                <div class="carousel-item active">
+                                    <a href="#">Wong
+                                      <img src="img2/wong1.webp" alt="wong" height="150" width="255" class="">
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 border border-primary d-flex flex-column align-items-center gap-3 p-4">
+
+                            <div class="">
+                                <h3 id="nebula" href="nebula">Nebula</h3>
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <p>Nebula es la hija adoptiva de Thanos y se ha criado junto a Gamora como si fuesen hermanas. Nebula aparece a bordo de la nave de Ronan el Acusador, pidiéndole el puesto de la misión de recuperar el orbe, pero muestra
+                                            cierta hostilidad cuando Ronan elige a Gamora en su lugar. Posteriormente, cuando Ronan planea destruir a Thanos, Nebula se alía con él prometiéndole asesinarlo y destruir miles de planetas.</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <img src="img2/nebula2.webp" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1 border border-primary d-flex flex-column align-items-center gap-3">
+                            <a href="#" class="button">portador</a>
+                            <a href="#" class="button">historia</a>
+                            <a href="#" class="button">poster</a>
+                            <a href="#" class="button">diseño</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </article>
     </main>
-    <section class="container-tres">
-        <div class="container-tres">
-            <div class="column--01">
-                <a href="#">Precolecction Genesys</a>
-                <a href="#">Solstirium Colecction</a>
-                <a href="#">Wereables AR/VR</a>
-                <a href="#">Customization</a>
-                <a href="#">Center Solstirium</a>
-                <a href="#">Universe Rium</a>
-            </div>
-            <div class="column--2">
-                <a href="#">Q4 2023</a>
-                <ul>
-                    <li>
-                        NFT presale
-                    </li>
-                    <li>
-                        100, $DARK token lounch and listing
-                    </li>
-                    <li>
-                        Strategy-based gameplay (alpha version).
-                    </li>
-                </ul>
-                <a href="#">Q1 2024</a>
-                <ul>
-                    <li>
-                        Strategy-based gameplay (beta version).
-                    </li>
-                    <li>
-                        PC alpha RPG-based gameplay.
-                    </li>
-                    <li>
-                        multilanguaje support.
-                    </li>
-                    <li>
-                        VR alpha gameplay
-                    </li>
-                </ul>
-            </div>
-            <div class="column--03">
-                <img src="img/q4.png" alt="Q4" height="300" width="400">
+
+    <section class="py-5">
+        <div class="container-tres d-flex flex-column gap-4">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#">Precolecction Genesys</a>
+                    <a href="#">Solstirium Colecction</a>
+                    <a href="#">Wereables AR/VR</a>
+                    <a href="#">Customization</a>
+                    <a href="#">Center Solstirium</a>
+                    <a href="#">Universe Rium</a>
+                </div>
+                <div class="col-4">
+                    <a href="#">Q4 2023</a>
+                    <ul>
+                        <li>
+                            NFT presale
+                        </li>
+                        <li>
+                            100, $DARK token lounch and listing
+                        </li>
+                        <li>
+                            Strategy-based gameplay (alpha version).
+                        </li>
+                    </ul>
+                    <a href="#">Q1 2024</a>
+                    <ul>
+                        <li>
+                            Strategy-based gameplay (beta version).
+                        </li>
+                        <li>
+                            PC alpha RPG-based gameplay.
+                        </li>
+                        <li>
+                            multilanguaje support.
+                        </li>
+                        <li>
+                            VR alpha gameplay
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <img src="img/q4.png" alt="Q4" height="300" width="400">
+                </div>
             </div>
         </div>
-
     </section>
     <section>
         <div class="contenedor-4 ">
@@ -210,6 +265,9 @@
         </div>
 
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
