@@ -5,87 +5,377 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/ultimo.css">
+    <title>Solst </title>
 </head>
 
-<body>
+<body class="body">
+    <header class="header">
+        <nav class="nav" id="menu">
+            <div class="container flexbox flexbox--header">
+                <a href="#">
+                    <img src="img/logo.PNG" alt="logo" class="img img--logo">
+                </a>
+                <a href="#menu" class="icon icon--lg icon--menu md:d-none "><i class="bi bi-list"></i></a>
+                <a href="#" class="icon icon--lg icon--close md:d-none "><i class="bi bi-x-circle"></i></a>
+                <ul class="list list--menu flexbox flexbox--responsive gap-xs">
+                    <li>
+                        <a href="#" class="link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">History</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Character</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Roadmap</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Genesys</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <a href="#">
+            <img src="img/letras.png" alt="imagen hero" class="img--hero-2">
+        </a>
+    </div>
+    <div class="division"></div>
     <main>
-        <section>
-            <div class="row">
-                <div class="col-4">
-                    <div id="list-example" class="list-group">
-                        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+        <article class="article">
+            <h1 class="py-3 section">PERSONAJES</h1>
+            <div class="py-3 container-dos">
+                <div id="carouselExample" class="">
+                    <div class="row g-0">
+                        <div class="col-md-1 d-flex flex-column  gap-3">
+
+                            <div class="list__redes justify-content-center align-center">
+                                <a href="https://www.youtube.com/" target="_blank" class="redes"><i
+                                    class="bi bi-youtube"></i></a>
+                                <a href="https://twitter.com/" target="_blank" class="redes"><i
+                                    class="bi bi-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" class="redes"><i
+                                 class="bi bi-instagram"></i></a>
+                                <div class="scroll d-flex align-center">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                  </button>
+                                    <a href="#" class="">Scroll</a>
+                                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next"> 
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3  d-flex flex-column align-items-center gap-0">
+                            <div class="">
+                                <div class="contenor-img" href="#nebula" onclick="nebula()">
+                                    <div class="nombre-img">Nebula</div>
+                                    <img src="img2/Nebula1.webp" alt="nebula" height="150" width="255" class="">
+
+
+                                </div>
+                                <div class="contenor-img" href="#war" onclick="war()">
+                                    <div class="nombre-img">War Machine</div>
+                                    <img src="img2/War Machine1.webp" alt="warMachine" height="150" width="255" class="">
+
+
+                                </div>
+                                <div class="contenor-img" href="#mantis" onclick="mantis()">
+                                    <div class="nombre-img">Mantis </div>
+                                    <img src="img2/Mantis.webp" alt="mantis" height="150" width="255" class="">
+
+                                </div>
+                                <div class="contenor-img" href="#winter" onclick="winter()">
+                                    <div class="nombre-img">Winter Soldier</div>
+                                    <img src="img2/winter soldier1.webp" alt="winter" height="150" width="255" class="">
+
+                                </div>
+                                <div class="contenor-img" href="#wong" onclick="wong()">
+                                    <div class="nombre-img">Wong</div>
+                                    <img src="img2/wong1.webp" alt="wong" height="150" width="255" class="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7  d-flex flex-column align-items-center gap-3 p-4">
+
+                            <div class="" id="nebula" style="display:block">
+                                <h3 href="nebula">NEBULA </h3>
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <p class="text-light">Nebula es la hija adoptiva de Thanos y se ha criado junto a Gamora como si fuesen hermanas. Nebula aparece a bordo de la nave de Ronan el Acusador, pidiéndole el puesto de la misión de recuperar el orbe, pero muestra
+                                            cierta hostilidad cuando Ronan elige a Gamora en su lugar. Posteriormente, cuando Ronan planea destruir a Thanos, Nebula se alía con él prometiéndole asesinarlo y destruir miles de planetas. Después de la llegada
+                                            de los Guardianes a la nave de Ronan en Xandar, Nebula y Gamora se enfrentan en una batalla, pero Nebula escapa en una cápsula espacial, después de darse cuenta de que Ronan pierde la batalla.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="img2/nebulaInformation.png" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="" id="war" style="display:none">
+                                <h3 href="nebula">WAR MACHINE</h3>
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <p class="text-light">Como War Machine, Rhodes continúa sirviendo a su país y ayuda a los Vengadores a derrotar a Ultron , desempeñando un papel clave en llevar a la gente de Sokovia a un lugar seguro antes de que Ultron provoque una
+                                            extinción masiva. No obstante, Rhodes se encuentra en medio de un conflicto entre los Vengadores por los Acuerdos de Sokovia , lo que lleva al Capitán América y Iron Man a entrar en desacuerdo y War Machine
+                                            se pone del lado del gobierno y apoya los Acuerdos</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="img2/War Machine1.webp" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="" id="mantis" style="display:none">
+                                <h3 href="nebula">MANTIS</h3>
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <p class="text-light">Mantis fue criada por el planeta viviente Ego cuando ella era joven. Como resultado de haberse criado aisladamente con Ego, ella tiene poca o ninguna interacción social adicional, y tiende a ser ingenua, tímida
+                                            e insegura. Después de que los Guardianes se estrellaran en el planeta de Berhert, después de escapar del Soberano, Mantis fue presentada al equipo junto con Ego. Durante este tiempo, ella trata de hacerse amiga
+                                            de Drax, quien la encuentra fea, aunque no la entiende y se ofende con sus insultos. Cuando el equipo viaja al planeta de Ego, los dos finalmente se unen cuando Drax recuerda cómo conoció a su esposa, y se lamentan
+                                            por la muerte de ella y de su hija. Más tarde, Mantis traicionaría a Ego cuando advierta a Drax de lo que el primero le hizo a sus propios hijos, lo que Gamora y Nebula finalmente descubrirían por sí mismas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="img2/Mantis.webp" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="" id="winter" style="display:none">
+                                <h3 href="nebula">WINTER SOLDIER</h3>
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <p class="text-light">
+                                            James Buchanan "Bucky" Barnes, un niño duro que pasó toda su vida en las bases del ejército, demostró ser lo suficientemente fuerte como para asumir el papel de compañero del Capitán América durante la Segunda Guerra Mundial. La pareja luchó contra los
+                                            poderes del Eje en todo el Big One hasta que Bucky pereció en un plan orquestado por el Baron Zemo original. Durante años, el Capitán América creyó muerto a su compañero, pero los rusos encontraron el cuerpo
+                                            de Barnes en el océano y convirtieron al amnésico en la perfecta máquina de matar. Al resultar difícil de controlar, los rusos decidieron ponerlo en congelación criogénica entre misiones, dando a luz al legendario
+                                            Soldado de Invierno. Eventualmente, el Capitán América entró en contacto con este Soldado de Invierno, reconoció a su compañero y usó un Cubo Cósmico roto para devolverle los recuerdos a su amigo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="img2/winter soldier1.webp" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="" id="wong" style="display:none">
+                                <h3 href="nebula">WONG</h3>
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <p class="text-light">
+                                            Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius y los fanáticos , Wong se convirtió en el guardián altamente protector de todos los libros antiguos cuando
+                                            conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros Maestros usaron su poder para finalmente derrotarlo, a costa de
+                                            la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se unió al Doctor Strange para proteger el Santuario de Nueva York . Wong estuvo con Strange y Iron Man cuando la Orden Negra atacó la
+                                            ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse atrás para proteger el Sanctum. York para que pudieran unirse
+                                            a la batalla final contra un Thanos alternativo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="img2/wongInformation.png" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1  d-flex flex-column align-items-center m-0">
+                            <a href="#" class="button">portador</a>
+                            <a href="#" class="button">historia</a>
+                            <a href="#" class="button">poster</a>
+                            <a href="#" class="button">diseño</a>
+
+                        </div>
                     </div>
-                </div>
-                <div class="col-8">
-                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                        <h4 id="list-item-1">Item 1</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
-                        <h4 id="list-item-2">Item 2</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
-                        <h4 id="list-item-3">Item 3</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
-                        <h4 id="list-item-4">Item 4</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
-                    </div>
+
                 </div>
             </div>
-        </section>
-
+        </article>
     </main>
-    <section class="section" data-aos="fade-up">
-        <div class="container">
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
+
+    <section class="py-5">
+        <div class="container-tres d-flex flex-column gap-4">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#">Precolecction Genesys</a>
+                    <a href="#">Solstirium Colecction</a>
+                    <a href="#">Wereables AR/VR</a>
+                    <a href="#">Customization</a>
+                    <a href="#">Center Solstirium</a>
+                    <a href="#">Universe Rium</a>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+                <div class="col-4">
+                    <a href="#">Q4 2023</a>
+                    <ul>
+                        <li>
+                            NFT presale
+                        </li>
+                        <li>
+                            100, $DARK token lounch and listing
+                        </li>
+                        <li>
+                            Strategy-based gameplay (alpha version).
+                        </li>
+                    </ul>
+                    <a href="#">Q1 2024</a>
+                    <ul>
+                        <li>
+                            Strategy-based gameplay (beta version).
+                        </li>
+                        <li>
+                            PC alpha RPG-based gameplay.
+                        </li>
+                        <li>
+                            multilanguaje support.
+                        </li>
+                        <li>
+                            VR alpha gameplay
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <img src="img/q4.png" alt="Q4" height="300" width="400">
+                </div>
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <section>
+        <div class="contenedor-4 ">
+            <h2 class="titleh2 animado">TEAM</h2>
+            <div>
+                <a href="#">founder</a>
+                <a href="#">studio</a>
+                <a href="#">Marketing</a>
+                <a href="#">Developer</a>
+            </div>
+            <ul class="list-members animado">
+                <li class="member">
+                    <div class="member-image">
+                        <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                    </div>
+                    <div class="member-info">
+                        <h4>Jhonatan Manrique</h4>
+                        <p>Founder.</p>
+                        <div class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="member">
+                    <div class="member-image">
+                        <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                    </div>
+                    <div class="member-info">
+                        <h4>Jhonatan Manrique</h4>
+                        <p>Studio</p>
+                        <div class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="member">
+                    <div class="member-image">
+                        <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                    </div>
+                    <div class="member-info">
+                        <h4>Jhonatan Manrique</h4>
+                        <p>Marketing</p>
+                        <div class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="member">
+                    <div class="member-image">
+                        <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+                    </div>
+                    <div class="member-info">
+                        <h4>Jhonatan Manrique</h4>
+                        <p>Developer</p>
+                        <div class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true,
+        function nebula() {
 
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
+            document.getElementById("nebula").style.display = "block"
+            document.getElementById("war").style.display = "none"
+            document.getElementById("mantis").style.display = "none"
+            document.getElementById("winter").style.display = "none"
+            document.getElementById("wong").style.display = "none"
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+        }
 
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-        AOS.init();
+        function war() {
+
+            document.getElementById("nebula").style.display = "none"
+            document.getElementById("war").style.display = "block"
+            document.getElementById("mantis").style.display = "none"
+            document.getElementById("winter").style.display = "none"
+            document.getElementById("wong").style.display = "none"
+        }
+
+        function mantis() {
+
+            document.getElementById("nebula").style.display = "none"
+            document.getElementById("war").style.display = "none"
+            document.getElementById("mantis").style.display = "block"
+            document.getElementById("winter").style.display = "none"
+            document.getElementById("wong").style.display = "none"
+
+        }
+
+        function winter() {
+            document.getElementById("nebula").style.display = "none"
+            document.getElementById("war").style.display = "none"
+            document.getElementById("mantis").style.display = "none"
+            document.getElementById("winter").style.display = "block"
+            document.getElementById("wong").style.display = "none"
+
+        }
+
+        function wong() {
+
+            document.getElementById("nebula").style.display = "none"
+            document.getElementById("war").style.display = "none"
+            document.getElementById("mantis").style.display = "none"
+            document.getElementById("winter").style.display = "none"
+            document.getElementById("wong").style.display = "block"
+
+        }
     </script>
 </body>
 
