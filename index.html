@@ -14,9 +14,9 @@
 </head>
 
 <body class="body">
-    <header class="header ">
+    <header class="container-md-fluid header ">
         <nav class="nav" id="menu">
-            <div class="container flexbox flexbox--header">
+            <div class="contenido-inicio flexbox flexbox--header">
                 <a href="#">
                     <img src="img/logo.PNG" alt="logo" class="img img--logo">
                 </a>
@@ -42,14 +42,14 @@
             </div>
         </nav>
     </header>
-    <div class="container-md hero">
+    <div class="container-md-fluid hero">
         <a href="#">
             <img src="img/letras.png" alt="imagen hero" class="img--hero-2">
         </a>
     </div>
     <div class="division"></div>
     <main>
-        <article class="container-md article">
+        <article class="container-md-fluid article">
             <h1 class="py-3 section">PERSONAJES</h1>
             <div class="py-3 container-dos">
                 <div id="carouselExample" class="">
@@ -81,37 +81,44 @@
                             <div class="">
                                 <div class="contenor-img" href="#nebula" onclick="nebula()">
                                     <div class="nombre-img">Nebula</div>
-                                    <img src="img2/Nebula1.webp" alt="nebula" height="150" width="255" class="">
-
-
+                                    <img src="img2/Nebula1.webp" alt="nebula" height="100" width="250" class="seccion-img">
                                 </div>
                                 <div class="contenor-img" href="#war" onclick="war()">
                                     <div class="nombre-img">War Machine</div>
-                                    <img src="img2/War Machine1.webp" alt="warMachine" height="150" width="255" class="">
+                                    <img src="img2/War Machine1.webp" alt="warMachine" height="100" width="250" class="seccion-img">
 
 
                                 </div>
                                 <div class="contenor-img" href="#mantis" onclick="mantis()">
                                     <div class="nombre-img">Mantis </div>
-                                    <img src="img2/Mantis.webp" alt="mantis" height="150" width="255" class="">
+                                    <img src="img2/Mantis.webp" alt="mantis" height="100" width="250" class="seccion-img">
 
                                 </div>
                                 <div class="contenor-img" href="#winter" onclick="winter()">
                                     <div class="nombre-img">Winter Soldier</div>
-                                    <img src="img2/winter soldier1.webp" alt="winter" height="150" width="255" class="">
+                                    <img src="img2/winter soldier1.webp" alt="winter" height="100" width="250" class="seccion-img">
 
                                 </div>
                                 <div class="contenor-img" href="#wong" onclick="wong()">
                                     <div class="nombre-img">Wong</div>
-                                    <img src="img2/wong1.webp" alt="wong" height="150" width="255" class="">
+                                    <img src="img2/wong1.webp" alt="wong" height="100" width="250" class="seccion-img">
 
+                                </div>
+                                <div class="contenor-img" href="#wong" onclick="wong()">
+                                    <div class="nombre-img">Wong</div>
+                                    <img src="img2/wong1.webp" alt="wong" height="100" width="250" class="seccion-img">
+
+                                </div>
+                                <div class="contenor-img" href="#nebula" onclick="nebula()">
+                                    <div class="nombre-img">Nebula</div>
+                                    <img src="img2/Nebula1.webp" alt="nebula" height="100" width="250" class="seccion-img">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-7  d-flex flex-column align-items-center gap-3 p-4 justify-content-md-center">
 
                             <div class="" id="nebula" style="display:block">
-                                <h3 href="nebula">NEBULA </h3>
+                                <h3 href="#">NEBULA </h3>
                                 <div class="row g-0">
                                     <div class="col-md-6">
                                         <p class="text-light">Nebula es la hija adoptiva de Thanos y se ha criado junto a Gamora como si fuesen hermanas. Nebula aparece a bordo de la nave de Ronan el Acusador, pidiéndole el puesto de la misión de recuperar el orbe, pero muestra
@@ -126,7 +133,7 @@
                                 </div>
                             </div>
                             <div class="" id="war" style="display:none">
-                                <h3 href="nebula">WAR MACHINE</h3>
+                                <h3 href="#">WAR MACHINE</h3>
                                 <div class="row g-0">
                                     <div class="col-md-6">
                                         <p class="text-light">Como War Machine, Rhodes continúa sirviendo a su país y ayuda a los Vengadores a derrotar a Ultron , desempeñando un papel clave en llevar a la gente de Sokovia a un lugar seguro antes de que Ultron provoque una
@@ -141,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="" id="mantis" style="display:none">
-                                <h3 href="nebula">MANTIS</h3>
+                                <h3 href="#">MANTIS</h3>
                                 <div class="row g-0">
                                     <div class="col-md-6">
                                         <p class="text-light">Mantis fue criada por el planeta viviente Ego cuando ella era joven. Como resultado de haberse criado aisladamente con Ego, ella tiene poca o ninguna interacción social adicional, y tiende a ser ingenua, tímida
@@ -158,7 +165,7 @@
                                 </div>
                             </div>
                             <div class="" id="winter" style="display:none">
-                                <h3 href="nebula">WINTER SOLDIER</h3>
+                                <h3 href="#">WINTER SOLDIER</h3>
                                 <div class="row g-0">
                                     <div class="col-md-6">
                                         <p class="text-light">
@@ -176,7 +183,45 @@
                                 </div>
                             </div>
                             <div class="" id="wong" style="display:none">
-                                <h3 href="nebula">WONG</h3>
+                                <h3 href="#">WONG</h3>
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <p class="text-light">
+                                            Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius y los fanáticos , Wong se convirtió en el guardián altamente protector de todos los libros antiguos cuando
+                                            conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros Maestros usaron su poder para finalmente derrotarlo, a costa de
+                                            la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se unió al Doctor Strange para proteger el Santuario de Nueva York . Wong estuvo con Strange y Iron Man cuando la Orden Negra atacó la
+                                            ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse atrás para proteger el Sanctum. York para que pudieran unirse
+                                            a la batalla final contra un Thanos alternativo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="img2/wongInformation.png" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="" id="wong" style="display:none">
+                                <h3 href="#">WONG</h3>
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <p class="text-light">
+                                            Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius y los fanáticos , Wong se convirtió en el guardián altamente protector de todos los libros antiguos cuando
+                                            conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros Maestros usaron su poder para finalmente derrotarlo, a costa de
+                                            la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se unió al Doctor Strange para proteger el Santuario de Nueva York . Wong estuvo con Strange y Iron Man cuando la Orden Negra atacó la
+                                            ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse atrás para proteger el Sanctum. York para que pudieran unirse
+                                            a la batalla final contra un Thanos alternativo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="img2/wongInformation.png" alt="" width="300" height="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="" id="wong" style="display:none">
+                                <h3 href="#">WONG</h3>
                                 <div class="row g-0">
                                     <div class="col-md-6">
                                         <p class="text-light">
@@ -210,75 +255,66 @@
         </article>
     </main>
 
-    <section class="container-md py-4">
+    <section class="container-md-fluid py-4">
         <h2>ROAD MAP</h2>
-        <div class="container-tres d-flex flex-column gap-3">
-            <div class="row p-3">
-                <div class="col-md-3 text-uppercase ">
-                    <div class="map">
-                        <a href="#" class="text-map">Solstirium Colecction</a>
-                        <a href="#" class="text-map">Precolecction Genesys</a>
-                        <a href="#" class="text-map">Wereables AR/VR</a>
-                        <a href="#" class="text-map">Customization</a>
-                        <a href="#" class="text-map">Center Solstirium</a>
-                        <a href="#" class="text-map">Universe Rium</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="map-section">
-                        <div class="map-section-1">
-                            <a href="#">Q4 2023</a>
-                            <ul>
-                                <li>
-                                    NFT presale
-                                </li>
-                                <li>
-                                    100, $DARK token lounch and listing
-                                </li>
-                                <li>
-                                    Strategy-based gameplay (alpha version).
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="map-section-2">
-                            <a href="#">Q1 2024</a>
-                            <ul>
-                                <li>
-                                    Strategy-based gameplay (beta version).
-                                </li>
-                                <li>
-                                    PC alpha RPG-based gameplay.
-                                </li>
-                                <li>
-                                    multilanguaje support.
-                                </li>
-                                <li>
-                                    VR alpha gameplay
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 align-items-center justify-content-md-center">
-                    <img src="img/q4.png" alt="Q4" height="300" width="400">
+        <div class="row p-3 section-map">
+            <div class="col-md-3 text-uppercase d-flex flex-column justify-content-md-center align-items-center ">
+                <div class="map d-flex flex-column align-items-center gap-3 p-4 justify-content-md-center">
+                    <a href="#" class="text-map">Solstirium Colecction</a>
+                    <a href="#" class="text-map">Precolecction Genesys</a>
+                    <a href="#" class="text-map">Wereables AR/VR</a>
+                    <a href="#" class="text-map">Customization</a>
+                    <a href="#" class="text-map">Center Solstirium</a>
+                    <a href="#" class="text-map">Universe Rium</a>
                 </div>
             </div>
+
+            <div class="col-md-4 d-flex flex-column justify-content-md-center align-items-center ">
+                <div class="map-section ">
+                    <div class="map-section-1">
+                        <a href="#">Q4 2023</a>
+                        <ul>
+                            <li>
+                                NFT presale
+                            </li>
+                            <li>
+                                100, $DARK token lounch and listing
+                            </li>
+                            <li>
+                                Strategy-based gameplay (alpha version).
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map-section-2">
+                        <a href="#">Q1 2024</a>
+                        <ul>
+                            <li>
+                                Strategy-based gameplay (beta version).
+                            </li>
+                            <li>
+                                PC alpha RPG-based gameplay.
+                            </li>
+                            <li>
+                                multilanguaje support.
+                            </li>
+                            <li>
+                                VR alpha gameplay
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5  d-flex flex-column justify-content-md-center align-items-center">
+                <img src="img/q4.png" alt="Q4" height="350" width="500">
+            </div>
         </div>
+
     </section>
-    <section>
-        <div class="container-md flex-column d-flex">
+    <footer>
+        <div class="container-md-fluid flex-column d-flex">
             <h2 class="titleh2 animado">TEAM</h2>
             <div class="row ">
-                <div class="col-md-4">
-                    <a href="#">founder</a>
-                    <br>
-                    <a href="#">studio</a>
-                    <br>
-                    <a href="#">Marketing</a>
-                    <br>
-                    <a href="#">Developer</a>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-6  d-flex flex-column justify-content-md-center align-items-center">
                     <div>
                         <ul class="list-members animado">
                             <li class="member">
@@ -312,7 +348,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 ">
                     <ul>
                         <li class="member">
                             <div class="member-image">
@@ -346,7 +382,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script>

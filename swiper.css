@@ -2,3 +2,48 @@
     width: 600px;
     height: 300px;
 }
+
+
+/*inicio main*/
+
+
+/*
+    .redes {
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .scroll {
+        display: flex;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .column-2 {
+        display: flex;
+        background-color: green;
+        color: #090909;
+        margin: 0;
+    }
+    
+    .column-3 {
+        display: flex;
+        background-color: aqua;
+        margin: 0;
+        position: static;
+    }
+    
+    */
+
+
+/* .column-4 {
+        display: flex;
+        background-color: #ff0000;
+        margin: 0;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+    }
+    */
