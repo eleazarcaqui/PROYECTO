@@ -258,13 +258,6 @@
     background-size: cover;
 }
 
-.column-1 {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.415);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-}
-
 .list__redes {
     margin: 0;
     padding: 0;
@@ -298,26 +291,39 @@
 
 /*column dos */
 
-.contenedor-img {
+.font-color {
+    background-color: rgba(238, 70, 70, 0.276);
+    padding: 10px;
+}
+
+.item {
+    margin-bottom: 5px;
+    border-radius: 5%;
+}
+
+.contenedorImg {
     position: absolute;
     display: inline-block;
     align-items: end;
     justify-content: end;
 }
 
+.seccion-img {
+    border-radius: 5%;
+}
+
 .seccion-img:hover {
     opacity: 0.6;
-    border-radius: 10%;
+    border-radius: 5%;
+    cursor: pointer;
 }
 
 .nombre-img {
     display: flex;
     position: absolute;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    font-family: monospace;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -355,13 +361,13 @@
     margin-bottom: 20px;
     text-decoration: none;
     padding: 0;
-    transition: transform .2s;
+    transition: transform .3s;
     background-color: rgb(104, 168, 224);
 }
 
 .text-map:hover {
     background-color: beige;
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .map-section {
@@ -383,8 +389,46 @@
 }
 
 .map-section-2 {
+    margin: 0;
+    margin-bottom: 20px;
     border: 1px solid blue;
-    background-color: rgba(0, 0, 255, 0.254);
+    background-color: rgba(209, 227, 78, 0.583);
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.map-section-3 {
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid blue;
+    background-color: rgba(255, 0, 55, 0.254);
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.map-section-4 {
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid blue;
+    background-color: rgba(0, 106, 255, 0.384);
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.map-section-5 {
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid blue;
+    background-color: rgba(37, 180, 89, 0.371);
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.map-section-6 {
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid blue;
+    background-color: rgba(205, 98, 31, 0.254);
     border-radius: 10%;
     padding: 10px;
 }

@@ -17,21 +17,21 @@
             <div class="row">
                 <div class="col-4">
                     <div id="list-example" class="list-group">
-                        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                        <a class="list-group-item list-group-item-action item" href="#list-item-1" onclick="cargar(this)">Item 1</a>
+                        <a class="list-group-item list-group-item-action item" href="#list-item-2" onclick="cargar(this)">Item 2</a>
+                        <a class="list-group-item list-group-item-action item" href="#list-item-3" onclick="cargar(this)">Item 3</a>
+                        <a class="list-group-item list-group-item-action item" href="#list-item-4" onclick="cargar(this)">Item 4</a>
                     </div>
                 </div>
                 <div class="col-8">
                     <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                        <h4 id="list-item-1">Item 1</h4>
+                        <h4 id="list-item-1" class="item" onclick="cargar(this)">Item 1</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
-                        <h4 id="list-item-2">Item 2</h4>
+                        <h4 id="list-item-2" class="item" onclick="cargar(this)">Item 2</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
-                        <h4 id="list-item-3">Item 3</h4>
+                        <h4 id="list-item-3" class="item" onclick="cargar(this)">Item 3</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
-                        <h4 id="list-item-4">Item 4</h4>
+                        <h4 id="list-item-4" class="item" onclick="cargar(this)">Item 4</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor dolores explicabo dicta sapiente veritatis cupiditate. Possimus minima modi alias sapiente culpa veritatis, blanditiis dicta fugiat, quam, et atque beatae?</p>
                     </div>
                 </div>
@@ -86,6 +86,29 @@
             },
         });
         AOS.init();
+
+        function cargar(item) {
+            quitarBordes();
+            quitarFondo();
+            item.style.border = "2px solid red";
+            item.style.backgroundColor = "#e6e6e6";
+
+            function quitarBordes() {
+                var items = document.getElementsByClassName("item");
+                for (i = 0; i < items.length; i++) {
+                    items[i].style.border = "none";
+                }
+
+            }
+
+            function quitarFondo() {
+                var items2 = document.getElementsByClassName("item");
+                for (i = 0; i < items2.length; i++) {
+                    items2[i].style.backgroundColor = "transparent";
+                }
+
+            }
+        }
     </script>
 </body>
 
