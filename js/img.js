@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function cargar(item) {
     quitarBordes();
     quitarFondo();
-    item.style.border = "2px solid red";
-    item.style.backgroundColor = "white";
+    item.style.border = "3px solid white";
+    item.style.backgroundColor = "#ee464646";
 
     function quitarBordes() {
         var items = document.getElementsByClassName("item");

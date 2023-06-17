@@ -1,6 +1,14 @@
 'use strict';
 
+function colection() {
 
+    document.getElementById("colection").style.display = "block"
+    document.getElementById("genesys").style.display = "none"
+    document.getElementById("arvr").style.display = "none"
+    document.getElementById("customization").style.display = "none"
+    document.getElementById("center").style.display = "none"
+    document.getElementById("universe").style.display = "none"
+}
 
 function genesys() {
 
@@ -50,14 +58,4 @@ function universe() {
     document.getElementById("customization").style.display = "none"
     document.getElementById("center").style.display = "none"
     document.getElementById("universe").style.display = "block"
-}
-
-function colection() {
-
-    document.getElementById("colection").style.display = "block"
-    document.getElementById("genesys").style.display = "none"
-    document.getElementById("arvr").style.display = "none"
-    document.getElementById("customization").style.display = "none"
-    document.getElementById("center").style.display = "none"
-    document.getElementById("universe").style.display = "none"
 }
