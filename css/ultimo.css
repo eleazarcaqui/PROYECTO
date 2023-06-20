@@ -776,7 +776,7 @@ strong {
     width: 150px;
     height: 150px;
     position: relative;
-    border-radius: 10%;
+    border-radius: 50%;
     /* box-shadow: 10px 5px 5px white; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
@@ -785,10 +785,13 @@ strong {
     position: relative;
     margin: 0;
     list-style: none;
-    padding: 0;
-    float: right;
 }
 
-li {
-    margin: 5px 0;
+.img-ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-top: 15px;
 }
+
+<li><a href="https://www.instagram.com/" class="text-decoration-none">Instagram <i class="bi bi-instagram"></i></a></li><li><a href="https://twitter.com/" class="text-decoration-none">Twitter <i class="bi bi-twitter"></i></a></li><li><a href="https://www.linkedin.com/" class="text-decoration-none">Linkedin <i class="bi bi-linkedin"></i></a></li>
