@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     cargar(primerItem);
+   
 });
 
 function cargar(item) {

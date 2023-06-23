@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "usernamehw.errorlens"
+        "usernamehw.errorlens",
+        "pranaygp.vscode-css-peek",
+        "hwencc.html-tag-wrapper",
+        "hoovercj.vscode-power-mode"
     ]
 }
