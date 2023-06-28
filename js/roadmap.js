@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 60;
+		eventsMinDistance = 70;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
@@ -22,6 +22,7 @@ jQuery(document).ready(function($){
 			setDatePosition(timelineComponents, eventsMinDistance);
 			//assign a width to the timeline
 			var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
+			
 			//the timeline has been initialize - show it
 			timeline.addClass('loaded');
 
@@ -64,6 +65,7 @@ jQuery(document).ready(function($){
 				}
 			});
 		});
+
 	}
 
 	function updateSlide(timelineComponents, timelineTotWidth, string) {

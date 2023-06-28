@@ -30,3 +30,22 @@ function cargar(item) {
 
     }
 }
+let writing = str => {
+    let arrFromStr = str.split('');
+    let i = 0;
+    let  printStr = setInterval (function(){
+    if(arrFromStr[i] === ''){
+    document.body.innerHtml += arrFromStr[i];
+    document.body.innerHtml += arrFromStr[i + 1];
+    i += 2;
+    }else{
+    document.body.innerHtml += arrFromStr[i];
+    i++;
+    }
+    if (i === arrFromStr.length){
+    clearInterval (printStr);
+    }
+    
+    },500);
+};
+    writing('Para crear una máquina de escribir con varias líneas utilizando HTML');

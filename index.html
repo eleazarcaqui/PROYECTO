@@ -1,752 +1,487 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<link rel="stylesheet" href="./css/ultimo.css">
-		<link rel="stylesheet" href="./css/roadmap.css">
-		<title>Solst
-		</title>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="./css/ultimo.css">
+	<link rel="stylesheet" href="./css/roadmap.css">
+	<title>Solst
+	</title>
+</head>
 
-	<body class="body">
-		<header class="container-md-fluid header ">
-			<nav class="nav" id="menu">
-				<div class="contenido-inicio flexbox flexbox--header">
-					<a href="#">
-						<img src="img/logo.PNG" alt="logo" class="img img--logo">
-					</a>
-					<a href="#menu" class="icon icon--lg icon--menu md:d-none ">
-						<i class="bi bi-list"></i>
-					</a>
-					<a href="#" class="icon icon--lg icon--close md:d-none ">
-						<i class="bi bi-x-circle"></i>
-					</a>
-					<ul class="list list--menu flexbox flexbox--responsive gap-xs">
-						<li>
-							<a href="#" class="link">Home</a>
-						</li>
-						<li>
-							<a href="#" class="link">History</a>
-						</li>
-						<li>
-							<a href="#" class="link">Character</a>
-						</li>
-						<li>
-							<a href="#" class="link">Roadmap</a>
-						</li>
-						<li>
-							<a href="#" class="link">Genesys</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<div class="container-md-fluid hero">
-			<a href="#">
-				<img src="img/letras.png" alt="imagen hero" class="img--hero-2">
-			</a>
-		</div>
-		<div class="division"></div>
-		<main>
-			<article class="container-md-fluid article">
-				<h1 class="py-3 section">PERSONAJES</h1>
-				<div class="py-3 container-dos">
-					<div id="carouselExample" class="">
-						<div class="row g-0">
-							<div class="col-md-1 d-flex flex-column  gap-3">
-
-								<div class="list__redes justify-content-center align-center">
-									<a href="https://www.youtube.com/" target="_blank" class="redes">
-										<i class="bi bi-youtube"></i>
-									</a>
-									<a href="https://twitter.com/" target="_blank" class="redes">
-										<i class="bi bi-twitter"></i>
-									</a>
-									<a href="https://www.instagram.com/" target="_blank" class="redes">
-										<i class="bi bi-instagram"></i>
-									</a>
-									<div class="scroll d-flex align-center">
-										<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Previous</span>
-										</button>
-										<a href="#" class="">Scroll</a>
-										<button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="visually-hidden">Next</span>
-										</button>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-md-3  d-flex flex-column align-items-center gap-0">
-								<div class="font-color">
-									<div class="item" onclick="cargar(this)">
-										<div class="contenorImg" href="#nebula" onclick="nebula()" id="img">
-											<p class="nombre-img">Nebula</p>
-											<img src="img2/Nebula1.webp" alt="nebula" height="100" width="250" class="seccion-img" id="img">
-										</div>
-									</div>
-									<div class="item" onclick="cargar(this)">
-										<div class="contenorImg item" href="#war" onclick="war()" id="img">
-											<p class="nombre-img">War Machine</p>
-											<img src="img2/War Machine1.webp" alt="warMachine" height="100" width="250" class="seccion-img" id="img">
-										</div>
-									</div>
-									<div class="item" onclick="cargar(this)">
-										<div class="contenorImg" href="#mantis" onclick="mantis()">
-											<p class="nombre-img" id="descripcion">Mantis
-											</p>
-											<img src="img2/Mantis.webp" alt="mantis" height="100" width="250" class="seccion-img" id="img">
-
-										</div>
-									</div>
-									<div class="item" onclick="cargar(this)">
-										<div class="contenorImg" href="#winter" onclick="winter()">
-											<p class="nombre-img" id="descripcion">Winter Soldier</p>
-											<img src="img2/winter soldier1.webp" alt="winter" height="100" width="250" class="seccion-img" id="img">
-										</div>
-									</div>
-									<div class="item" onclick="cargar(this)">
-										<div class="contenorImg" href="#wong" onclick="wong()">
-											<p class="nombre-img" id="descripcion">Wong</p>
-											<img src="img2/wong1.webp" alt="wong" height="100" width="250" class="seccion-img" id="img">
-										</div>
-									</div>
-									<div class="item" onclick="cargar(this)">
-										<div class="contenorImg" href="#wong" onclick="wong()">
-											<p class="nombre-img" id="descripcion">Wong</p>
-											<img src="./img/MERCENARIO 24.png" alt="wong" height="100" width="250" class="seccion-img" id="img">
-										</div>
-									</div>
-									<div class="item" onclick="cargar(this)">
-										<div class="contenorImg" href="#nebula" onclick="nebula()">
-											<p class="nombre-img" id="descripcion">Nebula</p>
-											<img src="img2/Nebula1.webp" alt="nebula" height="100" width="250" class="seccion-img" id="img">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-7  d-flex flex-column align-items-center gap-3 p-4 justify-content-md-center">
-
-								<div class="" id="nebula" style="display:block">
-									<h3 href="#">NEBULA
-									</h3>
-									<div class="row g-0">
-										<div class="col-md-6">
-											<p class="text-light">Nebula es la hija adoptiva de Thanos y se ha criado junto a Gamora como si fuesen hermanas. Nebula aparece a bordo de la nave de Ronan el Acusador, pidiéndole el puesto de la misión de recuperar el orbe, pero muestra
-																																																																																																																																																																																																																																																																																				                                            cierta hostilidad cuando Ronan elige a Gamora en su lugar. Posteriormente, cuando Ronan planea destruir a Thanos, Nebula se alía con él prometiéndole asesinarlo y destruir miles de planetas. Después de la llegada
-																																																																																																																																																																																																																																																																																				                                            de los Guardianes a la nave de Ronan en Xandar, Nebula y Gamora se enfrentan en una batalla, pero Nebula escapa en una cápsula espacial, después de darse cuenta de que Ronan pierde la batalla.</p>
-										</div>
-										<div class="col-md-6">
-											<div class="card-body">
-												<img src="img2/nebulaInformation.png" alt="" width="300" height="500">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="" id="war" style="display:none">
-									<h3 href="#">WAR MACHINE</h3>
-									<div class="row g-0">
-										<div class="col-md-6">
-											<p class="text-light">Como War Machine, Rhodes continúa sirviendo a su país y ayuda a los Vengadores a derrotar a Ultron , desempeñando un papel clave en llevar a la gente de Sokovia a un lugar seguro antes de que Ultron provoque una
-																																																																																																																																																																																																																																																																																				                                            extinción masiva. No obstante, Rhodes se encuentra en medio de un conflicto entre los Vengadores por los Acuerdos de Sokovia , lo que lleva al Capitán América y Iron Man a entrar en desacuerdo y War Machine
-																																																																																																																																																																																																																																																																																				                                            se pone del lado del gobierno y apoya los Acuerdos</p>
-										</div>
-										<div class="col-md-6">
-											<div class="card-body">
-												<img src="img2/War Machine1.webp" alt="" width="300" height="500">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="" id="mantis" style="display:none">
-									<h3 href="#">MANTIS</h3>
-									<div class="row g-0">
-										<div class="col-md-6">
-											<p class="text-light">Mantis fue criada por el planeta viviente Ego cuando ella era joven. Como resultado de haberse criado aisladamente con Ego, ella tiene poca o ninguna interacción social adicional, y tiende a ser ingenua, tímida
-																																																																																																																																																																																																																																																																																				                                            e insegura. Después de que los Guardianes se estrellaran en el planeta de Berhert, después de escapar del Soberano, Mantis fue presentada al equipo junto con Ego. Durante este tiempo, ella trata de hacerse amiga
-																																																																																																																																																																																																																																																																																				                                            de Drax, quien la encuentra fea, aunque no la entiende y se ofende con sus insultos. Cuando el equipo viaja al planeta de Ego, los dos finalmente se unen cuando Drax recuerda cómo conoció a su esposa, y se lamentan
-																																																																																																																																																																																																																																																																																				                                            por la muerte de ella y de su hija. Más tarde, Mantis traicionaría a Ego cuando advierta a Drax de lo que el primero le hizo a sus propios hijos, lo que Gamora y Nebula finalmente descubrirían por sí mismas.
-											</p>
-										</div>
-										<div class="col-md-6">
-											<div class="card-body">
-												<img src="img2/Mantis.webp" alt="" width="300" height="500">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="" id="winter" style="display:none">
-									<h3 href="#">WINTER SOLDIER</h3>
-									<div class="row g-0">
-										<div class="col-md-6">
-											<p class="text-light">
-												James Buchanan "Bucky" Barnes, un niño duro que pasó toda su vida en las bases del ejército, demostró ser lo suficientemente fuerte como para asumir el papel de compañero del Capitán América durante la Segunda Guerra Mundial. La pareja luchó contra los
-																																																																																																																																																																																																																																																																																				                                            poderes del Eje en todo el Big One hasta que Bucky pereció en un plan orquestado por el Baron Zemo original. Durante años, el Capitán América creyó muerto a su compañero, pero los rusos encontraron el cuerpo
-																																																																																																																																																																																																																																																																																				                                            de Barnes en el océano y convirtieron al amnésico en la perfecta máquina de matar. Al resultar difícil de controlar, los rusos decidieron ponerlo en congelación criogénica entre misiones, dando a luz al legendario
-																																																																																																																																																																																																																																																																																				                                            Soldado de Invierno. Eventualmente, el Capitán América entró en contacto con este Soldado de Invierno, reconoció a su compañero y usó un Cubo Cósmico roto para devolverle los recuerdos a su amigo.
-											</p>
-										</div>
-										<div class="col-md-6">
-											<div class="card-body">
-												<img src="img2/winter soldier1.webp" alt="" width="300" height="500">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="" id="wong" style="display:none">
-									<h3 href="#">WONG</h3>
-									<div class="row g-0">
-										<div class="col-md-6">
-											<p class="text-light">
-												Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius y los fanáticos , Wong se convirtió en el guardián altamente protector de todos los libros antiguos cuando
-																																																																																																																																																																																																																																																																																				                                            conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros Maestros usaron su poder para finalmente derrotarlo, a costa de
-																																																																																																																																																																																																																																																																																				                                            la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se unió al Doctor Strange para proteger el Santuario de Nueva York . Wong estuvo con Strange y Iron Man cuando la Orden Negra atacó la
-																																																																																																																																																																																																																																																																																				                                            ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse atrás para proteger el Sanctum. York para que pudieran unirse
-																																																																																																																																																																																																																																																																																				                                            a la batalla final contra un Thanos alternativo.
-											</p>
-										</div>
-										<div class="col-md-6">
-											<div class="card-body">
-												<img src="img2/wongInformation.png" alt="" width="300" height="500">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="" id="wong" style="display:none">
-									<h3 href="#">WONG</h3>
-									<div class="row g-0">
-										<div class="col-md-6">
-											<p class="text-light">
-												Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius y los fanáticos , Wong se convirtió en el guardián altamente protector de todos los libros antiguos cuando
-																																																																																																																																				conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros Maestros usaron su poder para finalmente derrotarlo, a costa de
-																																																																																																																																				la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se unió al Doctor Strange para proteger el Santuario de Nueva York . Wong estuvo con Strange y Iron Man cuando la Orden Negra atacó la
-																																																																																																																																				ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse atrás para proteger el Sanctum. York para que pudieran unirse
-																																																																																																																																			 a la batalla final contra un Thanos alternativo.
-											</p>
-										</div>
-										<div class="col-md-6">
-											<div class="card-body">
-												<img src="img2/wongInformation.png" alt="" width="300" height="500">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="" id="wong" style="display:none">
-									<h3 href="#">WONG</h3>
-									<div class="row">
-										<div class="col-md-6">
-											<p class="text-light">
-												Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius y los fanáticos , Wong se convirtió en el guardián altamente protector de todos los libros antiguos cuando
-																																																																																																																																																																																																																																																																																				                                            conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros Maestros usaron su poder para finalmente derrotarlo, a costa de
-																																																																																																																																																																																																																																																																																				                                            la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se unió al Doctor Strange para proteger el Santuario de Nueva York . Wong estuvo con Strange y Iron Man cuando la Orden Negra atacó la
-																																																																																																																																																																																																																																																																																				                                            ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse atrás para proteger el Sanctum. York para que pudieran unirse
-																																																																																																																																																																																																																																																																																				                                            a la batalla final contra un Thanos alternativo.
-											</p>
-										</div>
-										<div class="col-md-6">
-											<div class="card-body">
-												<img src="img2/wongInformation.png" alt="" width="300" height="500">
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-md-1  d-flex flex-column align-items-center m-0">
-								<a href="#" class="button">portador</a>
-								<a href="#" class="button">historia</a>
-								<a href="#" class="button">poster</a>
-								<a href="#" class="button">diseño</a>
-
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</article>
-		</main>
-		<section class="cd-horizontal-timeline">
-			<div class="timeline">
-				<div class="events-wrapper">
-					<div class="events">
-						<ol>
-							<li>
-								<a href="#0" data-date="16/01/2014" class="selected">Solst 0</a>
-							</li>
-							<li>
-								<a href="#0" data-date="28/02/2014">Solst 1</a>
-							</li>
-							<li>
-								<a href="#0" data-date="20/04/2014">Solst 2</a>
-							</li>
-							<li>
-								<a href="#0" data-date="20/05/2014">Solst 3</a>
-							</li>
-							<li>
-								<a href="#0" data-date="09/07/2014">Solst 4</a>
-							</li>
-							<li>
-								<a href="#0" data-date="30/08/2014">Solst 5</a>
-							</li>
-							<li>
-								<a href="#0" data-date="15/09/2014">Solst 6</a>
-							</li>
-							<li>
-								<a href="#0" data-date="01/11/2014">Solst 7</a>
-							</li>
-							<li>
-								<a href="#0" data-date="10/12/2014">Solst 8</a>
-							</li>
-							<li>
-								<a href="#0" data-date="19/01/2015">Solst 9</a>
-							</li>
-							<li>
-								<a href="#0" data-date="03/03/2015">Solst 10</a>
-							</li>
-						</ol>
-
-						<span class="filling-line" aria-hidden="true"></span>
-					</div>
-					<!-- .events -->
-				</div>
-				<!-- .events-wrapper -->
-
-				<ul class="cd-timeline-navigation">
+<body class="body">
+	<header class="container-md-fluid header ">
+		<nav class="nav" id="menu">
+			<div class="contenido-inicio flexbox flexbox--header">
+				<a href="#">
+					<img src="img/logo.PNG" alt="logo" class="img img--logo">
+				</a>
+				<a href="#menu" class="icon icon--lg icon--menu md:d-none ">
+					<i class="bi bi-list"></i>
+				</a>
+				<a href="#" class="icon icon--lg icon--close md:d-none ">
+					<i class="bi bi-x-circle"></i>
+				</a>
+				<ul class="list list--menu flexbox flexbox--responsive gap-xs">
 					<li>
-						<a href="#0" class="prev inactive">Prev</a>
+						<a href="#" class="link">Home</a>
 					</li>
 					<li>
-						<a href="#0" class="next">Next</a>
+						<a href="#" class="link">History</a>
+					</li>
+					<li>
+						<a href="#" class="link">Character</a>
+					</li>
+					<li>
+						<a href="#" class="link">Roadmap</a>
+					</li>
+					<li>
+						<a href="#" class="link">Genesys</a>
 					</li>
 				</ul>
-				<!-- .cd-timeline-navigation -->
 			</div>
-			<!-- .timeline -->
+		</nav>
+	</header>
+	<div class="container-md-fluid hero">
+		<div class="maquina__escribir">
+			<p id="escribirlas">Lorem ipsum dolor sit amet 
+				consectetur adipisicing elit. Repellat incidunt 
+				cumque ipsum nulla cupiditate fugiat et dolorum eos, 
+				maxime dolores officia hic enim eaque repellendus nihil
+				 delectus ipsa voluptates minima.</p>
+		  </div>
 
-			<div class="events-content">
-				<ol>
-					<li class="selected" data-date="16/01/2014">
-						<h2>Horizontal Timeline</h2>
-						<em>January 16th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
+			<img src="img/letras.png" alt="imagen hero" class="img--hero-2">
+	</div>
+	<div class="division"></div>
+	<main>
+		<article class="container-md-fluid article">
+			<h1 class="py-3 section">PERSONAJES</h1>
+			<div class="py-3 container-dos">
+				<div id="carouselExample" class="">
+					<div class="row g-0">
+						<div class="col-md-1 d-flex flex-column  gap-3">
 
-					<li data-date="28/02/2014">
-						<h2>Event title here</h2>
-						<em>February 28th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
+							<div class="list__redes justify-content-center align-center">
+								<a href="https://www.youtube.com/" target="_blank" class="redes">
+									<i class="bi bi-youtube"></i>
+								</a>
+								<a href="https://twitter.com/" target="_blank" class="redes">
+									<i class="bi bi-twitter"></i>
+								</a>
+								<a href="https://www.instagram.com/" target="_blank" class="redes">
+									<i class="bi bi-instagram"></i>
+								</a>
+								<div class="scroll d-flex align-center">
+									<button class="carousel-control-prev" type="button"
+										data-bs-target="#carouselExample" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<a href="#" class="">Scroll</a>
+									<button class="carousel-control-next " type="button"
+										data-bs-target="#carouselExample" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
 
-					<li data-date="20/04/2014">
-						<h2>Event title here</h2>
-						<em>March 20th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="20/05/2014">
-						<h2>Event title here</h2>
-						<em>May 20th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="09/07/2014">
-						<h2>Event title here</h2>
-						<em>July 9th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="30/08/2014">
-						<h2>Event title here</h2>
-						<em>August 30th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="15/09/2014">
-						<h2>Event title here</h2>
-						<em>September 15th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="01/11/2014">
-						<h2>Event title here</h2>
-						<em>November 1st, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="10/12/2014">
-						<h2>Event title here</h2>
-						<em>December 10th, 2014</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="19/01/2015">
-						<h2>Event title here</h2>
-						<em>January 19th, 2015</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="03/03/2015">
-						<h2>Event title here</h2>
-						<em>March 3rd, 2015</em>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-				</ol>
-			</div>
-			<!-- .events-content -->
-		</section>
-
-		<section class="container-md-fluid py-4">
-			<h2>ROAD MAP</h2>
-			<div class="row p-3 section-map">
-				<div class="col-md-3 text-uppercase d-flex flex-column justify-content-md-center align-items-center ">
-					<div class="map d-flex flex-column align-items-center gap-0 justify-content-md-center">
-						<button class="btn text-map" onclick="colection()" type="button">
-							<strong>Solstirium Colection</strong>
-							<div id="container-stars">
-								<div id="stars"></div>
-							</div>
-							<div id="glow">
-								<div class="circle"></div>
-								<div class="circle"></div>
-							</div>
-						</button>
-						<button class="btn text-map" onclick="genesys()" type="button">
-							<strong>Precolecction Genesys</strong>
-							<div id="container-stars">
-								<div id="stars"></div>
-							</div>
-							<div id="glow">
-								<div class="circle"></div>
-								<div class="circle"></div>
-							</div>
-						</button>
-						<button class="btn text-map" onclick="arvr()" type="button">
-							<strong>Wereables AR/VR</strong>
-							<div id="container-stars">
-								<div id="stars"></div>
-							</div>
-							<div id="glow">
-								<div class="circle"></div>
-								<div class="circle"></div>
-							</div>
-						</button>
-						<button class="btn text-map" onclick="customization()" type="button">
-							<strong>Customization</strong>
-							<div id="container-stars">
-								<div id="stars"></div>
-							</div>
-							<div id="glow">
-								<div class="circle"></div>
-								<div class="circle"></div>
-							</div>
-						</button>
-						<button class="btn text-map" onclick="center()" type="button">
-							<strong>Center Solstirium</strong>
-							<div id="container-stars">
-								<div id="stars"></div>
-							</div>
-							<div id="glow">
-								<div class="circle"></div>
-								<div class="circle"></div>
-							</div>
-						</button>
-						<button class="btn text-map" onclick="universe()" type="button">
-							<strong>Universe Rium</strong>
-							<div id="container-stars">
-								<div id="stars"></div>
-							</div>
-							<div id="glow">
-								<div class="circle"></div>
-								<div class="circle"></div>
-							</div>
-						</button>
-					</div>
-				</div>
-				<div class="col-md-9 d-flex">
-					<div class="w-100">
-						<div class="" id="colection" style="display:block">
-							<div class="row d-flex">
-								<div class="col-md-5 map-section  d-flex flex-column justify-content-md-center align-items-center ">
-									<div class="map-section-1" onclick="colection()">
-										<a href="#">Q4 2023</a>
-										<ul>
-											<li>
-												NFT presale
-											</li>
-											<li>
-												100, $DARK token lounch and listing
-											</li>
-											<li>
-												Strategy-based gameplay (alpha version).
-											</li>
-										</ul>
-									</div>
-									<div class="map-section-1">
-										<a href="#">Q1 2024</a>
-										<ul>
-											<li>
-												Strategy-based gameplay (beta version).
-											</li>
-											<li>
-												PC alpha RPG-based gameplay.
-											</li>
-											<li>
-												multilanguaje support.
-											</li>
-											<li>
-												VR alpha gameplay
-											</li>
-										</ul>
+						</div>
+						<div class="col-md-3  d-flex flex-column align-items-center gap-0">
+							<div class="font-color">
+								<div class="item" onclick="cargar(this)">
+									<div class="contenorImg" href="#nebula" onclick="nebula()" id="img">
+										<p class="nombre-img">Nebula</p>
+										<img src="img2/Nebula1.webp" alt="nebula" height="100" width="250"
+											class="seccion-img" id="img">
 									</div>
 								</div>
-								<div class="col-md-7 d-flex d-flex flex-column justify-content-md-center align-items-center">
-									<h3>colection</h3>
-									<img src="img/q4.png" alt="Q4" height="300" width="400">
+								<div class="item" onclick="cargar(this)">
+									<div class="contenorImg item" href="#war" onclick="war()" id="img">
+										<p class="nombre-img">War Machine</p>
+										<img src="img2/War Machine1.webp" alt="warMachine" height="100" width="250"
+											class="seccion-img" id="img">
+									</div>
+								</div>
+								<div class="item" onclick="cargar(this)">
+									<div class="contenorImg" href="#mantis" onclick="mantis()">
+										<p class="nombre-img" id="descripcion">Mantis
+										</p>
+										<img src="img2/Mantis.webp" alt="mantis" height="100" width="250"
+											class="seccion-img" id="img">
+
+									</div>
+								</div>
+								<div class="item" onclick="cargar(this)">
+									<div class="contenorImg" href="#winter" onclick="winter()">
+										<p class="nombre-img" id="descripcion">Winter Soldier</p>
+										<img src="img2/winter soldier1.webp" alt="winter" height="100" width="250"
+											class="seccion-img" id="img">
+									</div>
+								</div>
+								<div class="item" onclick="cargar(this)">
+									<div class="contenorImg" href="#wong" onclick="wong()">
+										<p class="nombre-img" id="descripcion">Wong</p>
+										<img src="img2/wong1.webp" alt="wong" height="100" width="250"
+											class="seccion-img" id="img">
+									</div>
+								</div>
+								<div class="item" onclick="cargar(this)">
+									<div class="contenorImg" href="#wong" onclick="wong()">
+										<p class="nombre-img" id="descripcion">Wong</p>
+										<img src="./img/MERCENARIO 24.png" alt="wong" height="100" width="250"
+											class="seccion-img" id="img">
+									</div>
+								</div>
+								<div class="item" onclick="cargar(this)">
+									<div class="contenorImg" href="#nebula" onclick="nebula()">
+										<p class="nombre-img" id="descripcion">Nebula</p>
+										<img src="img2/Nebula1.webp" alt="nebula" height="100" width="250"
+											class="seccion-img" id="img">
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="" id="genesys" style="display:none">
-							<div class="row">
-								<div class="col-md-5 map-section d-flex flex-column justify-content-md-center align-items-center">
-									<div class="map-section-2">
-										<a href="#">Q4 2023</a>
-										<ul>
-											<li>
-												NFT presale
-											</li>
-											<li>
-												100, $DARK token lounch and listing
-											</li>
-											<li>
-												Strategy-based gameplay (alpha version).
-											</li>
-										</ul>
+						<div
+							class="col-md-7  d-flex flex-column align-items-center gap-3 p-4 justify-content-md-center">
+
+							<div class="" id="nebula" style="display:block">
+								<h3 href="#">NEBULA
+								</h3>
+								<div class="row g-0">
+									<div class="col-md-6">
+										<p class="text-light">Nebula es la hija adoptiva de Thanos y se ha criado junto
+											a Gamora como si fuesen hermanas. Nebula aparece a bordo de la nave de Ronan
+											el Acusador, pidiéndole el puesto de la misión de recuperar el orbe, pero
+											muestra
+											cierta hostilidad cuando Ronan elige a Gamora en su lugar. Posteriormente,
+											cuando Ronan planea destruir a Thanos, Nebula se alía con él prometiéndole
+											asesinarlo y destruir miles de planetas. Después de la llegada
+											de los Guardianes a la nave de Ronan en Xandar, Nebula y Gamora se enfrentan
+											en una batalla, pero Nebula escapa en una cápsula espacial, después de darse
+											cuenta de que Ronan pierde la batalla.</p>
 									</div>
-									<div class="map-section-2">
-										<a href="#">Q1 2024</a>
-										<ul>
-											<li>
-												Strategy-based gameplay (beta version).
-											</li>
-											<li>
-												PC alpha RPG-based gameplay.
-											</li>
-											<li>
-												multilanguaje support.
-											</li>
-											<li>
-												VR alpha gameplay
-											</li>
-										</ul>
+									<div class="col-md-6">
+										<div class="card-body">
+											<img src="img2/nebulaInformation.png" alt="" width="300" height="500">
+										</div>
 									</div>
-								</div>
-								<div class="col-md-7  d-flex flex-column justify-content-md-center align-items-center">
-									<h3>genesys</h3>
-									<img src="img/image2.png" alt="Q4" height="300" width="400">
 								</div>
 							</div>
+							<div class="" id="war" style="display:none">
+								<h3 href="#">WAR MACHINE</h3>
+								<div class="row g-0">
+									<div class="col-md-6">
+										<p class="text-light">Como War Machine, Rhodes continúa sirviendo a su país y
+											ayuda a los Vengadores a derrotar a Ultron , desempeñando un papel clave en
+											llevar a la gente de Sokovia a un lugar seguro antes de que Ultron provoque
+											una
+											extinción masiva. No obstante, Rhodes se encuentra en medio de un conflicto
+											entre los Vengadores por los Acuerdos de Sokovia , lo que lleva al Capitán
+											América y Iron Man a entrar en desacuerdo y War Machine
+											se pone del lado del gobierno y apoya los Acuerdos</p>
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<img src="img2/War Machine1.webp" alt="" width="300" height="500">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="" id="mantis" style="display:none">
+								<h3 href="#">MANTIS</h3>
+								<div class="row g-0">
+									<div class="col-md-6">
+										<p class="text-light">Mantis fue criada por el planeta viviente Ego cuando ella
+											era joven. Como resultado de haberse criado aisladamente con Ego, ella tiene
+											poca o ninguna interacción social adicional, y tiende a ser ingenua, tímida
+											e insegura. Después de que los Guardianes se estrellaran en el planeta de
+											Berhert, después de escapar del Soberano, Mantis fue presentada al equipo
+											junto con Ego. Durante este tiempo, ella trata de hacerse amiga
+											de Drax, quien la encuentra fea, aunque no la entiende y se ofende con sus
+											insultos. Cuando el equipo viaja al planeta de Ego, los dos finalmente se
+											unen cuando Drax recuerda cómo conoció a su esposa, y se lamentan
+											por la muerte de ella y de su hija. Más tarde, Mantis traicionaría a Ego
+											cuando advierta a Drax de lo que el primero le hizo a sus propios hijos, lo
+											que Gamora y Nebula finalmente descubrirían por sí mismas.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<img src="img2/Mantis.webp" alt="" width="300" height="500">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="" id="winter" style="display:none">
+								<h3 href="#">WINTER SOLDIER</h3>
+								<div class="row g-0">
+									<div class="col-md-6">
+										<p class="text-light">
+											James Buchanan "Bucky" Barnes, un niño duro que pasó toda su vida en las
+											bases del ejército, demostró ser lo suficientemente fuerte como para asumir
+											el papel de compañero del Capitán América durante la Segunda Guerra Mundial.
+											La pareja luchó contra los
+											poderes del Eje en todo el Big One hasta que Bucky pereció en un plan
+											orquestado por el Baron Zemo original. Durante años, el Capitán América
+											creyó muerto a su compañero, pero los rusos encontraron el cuerpo
+											de Barnes en el océano y convirtieron al amnésico en la perfecta máquina de
+											matar. Al resultar difícil de controlar, los rusos decidieron ponerlo en
+											congelación criogénica entre misiones, dando a luz al legendario
+											Soldado de Invierno. Eventualmente, el Capitán América entró en contacto con
+											este Soldado de Invierno, reconoció a su compañero y usó un Cubo Cósmico
+											roto para devolverle los recuerdos a su amigo.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<img src="img2/winter soldier1.webp" alt="" width="300" height="500">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="" id="wong" style="display:none">
+								<h3 href="#">WONG</h3>
+								<div class="row g-0">
+									<div class="col-md-6">
+										<p class="text-light">
+											Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las
+											Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius
+											y los fanáticos , Wong se convirtió en el guardián altamente protector de
+											todos los libros antiguos cuando
+											conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius
+											intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros
+											Maestros usaron su poder para finalmente derrotarlo, a costa de
+											la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se
+											unió al Doctor Strange para proteger el Santuario de Nueva York . Wong
+											estuvo con Strange y Iron Man cuando la Orden Negra atacó la
+											ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que
+											Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse
+											atrás para proteger el Sanctum. York para que pudieran unirse
+											a la batalla final contra un Thanos alternativo.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<img src="img2/wongInformation.png" alt="" width="300" height="500">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="" id="wong" style="display:none">
+								<h3 href="#">WONG</h3>
+								<div class="row g-0">
+									<div class="col-md-6">
+										<p class="text-light">
+											Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las
+											Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius
+											y los fanáticos , Wong se convirtió en el guardián altamente protector de
+											todos los libros antiguos cuando
+											conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius
+											intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros
+											Maestros usaron su poder para finalmente derrotarlo, a costa de
+											la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se
+											unió al Doctor Strange para proteger el Santuario de Nueva York . Wong
+											estuvo con Strange y Iron Man cuando la Orden Negra atacó la
+											ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que
+											Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse
+											atrás para proteger el Sanctum. York para que pudieran unirse
+											a la batalla final contra un Thanos alternativo.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<img src="img2/wongInformation.png" alt="" width="300" height="500">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="" id="wong" style="display:none">
+								<h3 href="#">WONG</h3>
+								<div class="row">
+									<div class="col-md-6">
+										<p class="text-light">
+											Wong (mandarín:王) es el actual Hechicero Supremo de los Maestros de las
+											Artes Místicas . Cuando su antiguo bibliotecario fue asesinado por Kaecilius
+											y los fanáticos , Wong se convirtió en el guardián altamente protector de
+											todos los libros antiguos cuando
+											conoció a Stephen Strange y lo ayudó en sus estudios. Cuando Kaecilius
+											intentó usar su poder para traer a Dormammu a la Tierra, Wong y los otros
+											Maestros usaron su poder para finalmente derrotarlo, a costa de
+											la muerte de Ancient One . Con el conflicto de Kaecilius terminado, Wong se
+											unió al Doctor Strange para proteger el Santuario de Nueva York . Wong
+											estuvo con Strange y Iron Man cuando la Orden Negra atacó la
+											ciudad de Nueva York en busca de la Piedra del Tiempo . Después de que
+											Strange fuera secuestrado por Ebony Maw , Wong se vio obligado a quedarse
+											atrás para proteger el Sanctum. York para que pudieran unirse
+											a la batalla final contra un Thanos alternativo.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<img src="img2/wongInformation.png" alt="" width="300" height="500">
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
-						<div id="arvr" style="display:none">
-							<div class="row">
-								<div class="col-md-5 map-section">
-									<div class="map-section-3">
-										<a href="#">Q4 2023</a>
-										<ul>
-											<li>
-												NFT presale
-											</li>
-											<li>
-												100, $DARK token lounch and listing
-											</li>
-											<li>
-												Strategy-based gameplay (alpha version).
-											</li>
-										</ul>
-									</div>
-									<div class="map-section-3">
-										<a href="#">Q1 2024</a>
-										<ul>
-											<li>
-												Strategy-based gameplay (beta version).
-											</li>
-											<li>
-												PC alpha RPG-based gameplay.
-											</li>
-											<li>
-												multilanguaje support.
-											</li>
-											<li>
-												VR alpha gameplay
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-7  d-flex flex-column justify-content-md-center align-items-center">
-									<h3>ar/vr</h3>
-									<img src="img/galeria1.png" alt="Q4" height="300" width="400">
-								</div>
-							</div>
-						</div>
-						<div id="customization" style="display:none">
-							<div class="row">
-								<div class="col-md-5 map-section">
-									<div class="map-section-4">
-										<a href="#">Q4 2023</a>
-										<ul>
-											<li>
-												NFT presale
-											</li>
-											<li>
-												100, $DARK token lounch and listing
-											</li>
-											<li>
-												Strategy-based gameplay (alpha version).
-											</li>
-										</ul>
-									</div>
-									<div class="map-section-4">
-										<a href="#">Q1 2024</a>
-										<ul>
-											<li>
-												Strategy-based gameplay (beta version).
-											</li>
-											<li>
-												PC alpha RPG-based gameplay.
-											</li>
-											<li>
-												multilanguaje support.
-											</li>
-											<li>
-												VR alpha gameplay
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-7 d-flex flex-column justify-content-md-center align-items-center">
-									<h3>customization</h3>
-									<img src="img/galeria3.png" alt="Q4" height="300" width="400">
-								</div>
-							</div>
-						</div>
-						<div id="center" style="display:none">
-							<div class="row">
-								<div class="col-md-5 map-section">
-									<div class="map-section-5">
-										<a href="#">Q4 2023</a>
-										<ul>
-											<li>
-												NFT presale
-											</li>
-											<li>
-												100, $DARK token lounch and listing
-											</li>
-											<li>
-												Strategy-based gameplay (alpha version).
-											</li>
-										</ul>
-									</div>
-									<div class="map-section-5">
-										<a href="#">Q1 2024</a>
-										<ul>
-											<li>
-												Strategy-based gameplay (beta version).
-											</li>
-											<li>
-												PC alpha RPG-based gameplay.
-											</li>
-											<li>
-												multilanguaje support.
-											</li>
-											<li>
-												VR alpha gameplay
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-7  d-flex flex-column justify-content-md-center align-items-center">
-									<h3>center</h3>
-									<img src="img/banner1.png" alt="Q4" height="300" width="400">
-								</div>
-							</div>
-						</div>
-						<div id="universe" style="display:none">
-							<div class="row">
-								<div class="col-md-5 map-section">
-									<div class="map-section-6">
-										<a href="#">Q4 2023</a>
-										<ul>
-											<li>
-												NFT presale
-											</li>
-											<li>
-												100, $DARK token lounch and listing
-											</li>
-											<li>
-												Strategy-based gameplay (alpha version).
-											</li>
-										</ul>
-									</div>
-									<div class="map-section-6">
-										<a href="#">Q1 2024</a>
-										<ul>
-											<li>
-												Strategy-based gameplay (beta version).
-											</li>
-											<li>
-												PC alpha RPG-based gameplay.
-											</li>
-											<li>
-												multilanguaje support.
-											</li>
-											<li>
-												VR alpha gameplay
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-7  d-flex flex-column justify-content-md-center align-items-center">
-									<h3>universe</h3>
-									<img src="img/banner2.png" alt="Q4" height="300" width="400">
-								</div>
-							</div>
+						<div class="col-md-1  d-flex flex-column align-items-center m-0">
+							<a href="#" class="button">portador</a>
+							<a href="#" class="button">historia</a>
+							<a href="#" class="button">poster</a>
+							<a href="#" class="button">diseño</a>
+
 						</div>
 					</div>
+
 				</div>
 			</div>
-		</section>
-		<!--  <footer>
+		</article>
+	</main>
+	<section class="py-4">
+		<h2>ROAD MAP</h2>
+		<div class="container h-100">
+			<div class="cd-horizontal-timeline loaded">
+				<div class="timeline">
+					<div class="events-wrapper">
+						<div class="events" style="width: 1800px; transform: translateX(0);">
+							<ol class="" style="list-style: none;">
+								<li><a href="#0" data-date="16/01/2017" style="left: 200px;"
+										class="older-event selected">Solst 1</a></li>
+								<li><a href="#0" data-date="28/02/2017" style="left: 400px;" class="older-event">solst
+										2</a></li>
+								<li><a href="#0" data-date="20/04/2017" style="left: 600px;" class="older-event">solst
+										3</a></li>
+								<li><a href="#0" data-date="20/05/2017" style="left: 800px;" class="older-event">solst
+										4</a></li>
+								<li><a href="#0" data-date="09/07/2017" style="left: 1000px;" class="older-event">solst
+										5</a></li>
+								<li><a href="#0" data-date="30/08/2017" style="left: 1200px;" class="older-event">solst
+										6</a></li>
+								<li><a href="#0" data-date="15/09/2017" style="left: 1400px;" class="older-event">solst
+										7</a></li>
+								<li><a href="#0" data-date="01/11/2017" style="left: 1600px;" class="older-event">solst
+										8</a></li>
+							</ol> <span class="filling-line" aria-hidden="true"
+								style="transform: scaleX(0);"></span>
+						</div>
+					</div>
+					<ul class="cd-timeline-navigation" style="list-style: none;">
+						<li><a href="#0" class="prev"><i class="fa-solid fa-caret-left"></i></a></i></li>
+						<li><a href="#0" class="next fa-solid fa-caret-right"></a></li>
+					</ul>
+				</div>
+				<div class="events-content" style="height: 450px;">
+					<ol style="list-style: none;">
+						<li data-date="16/01/2017" class="selected">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p class="">It is a long established fact that a reader will be distracted by the
+										readable content of
+										a page when looking at its layout.</p>
+								</div>
+								<div class="col-md-7">
+									<img class="rounded m-r-15" src="./img/solts1.png" width="418" alt="557" />
+								</div>
+							</div>
+						</li>
+						<li data-date="28/02/2017" class=" d-flex">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum
+										voluptatum, harum
+										nobis quaerat dignissimos facilis</p>
+								</div>
+								<div class="col-md-7">
+									<img src="./img/solts2.png" class="rounded m-r-15" alt="" width="418" alt="557">
+								</div>
+							</div>
+						</li>
+						<li data-date="20/04/2017" class="d-flex">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum
+										voluptatum, harum
+										nobis quaerat dignissimos facilis, ipsa animi, quas quibusdam sit neque ut.</p>
+								</div>
+								<div class="col-md-7">
+									<img src="./img/capsule.png" class="rounded m-r-15" alt="" width="418" alt="557">
+								</div>
+							</div>
+						</li>
+						<li data-date="20/05/2017" class="d-flex">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum
+										voluptatum, harum
+										nobis quaerat dignissimos facilis, ipsa animi, quas quibusdam sit neque ut.</p>
+								</div>
+								<div class="col-md-7">
+									<img src="./img/image1.png" class="rounded m-r-15" alt="" width="418" alt="557">
+								</div>
+							</div>
+						</li>
+						<li data-date="09/07/2017" class="d-flex">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum
+										voluptatum, harum
+										nobis quaerat dignissimos facilis, ipsa animi, quas quibusdam sit neque ut.</p>
+								</div>
+								<div class="col-md-7">
+									<img src="./img/image2.1.png" class="rounded m-r-15" alt="" width="418" height="557">
+								</div>
+							</div>
+						</li>
+						<li data-date="30/08/2017" class="d-flex">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eius ex alias cum ea inventore excepturi dolores hic ab earum fugit, at asperiores, officia a eaque, harum molestias sit rerum.</p>
+								</div>
+								<div class="col-md-7">
+									<img src="./img/galeria1.png" class="rounded m-r-15" alt="" width="418" height="557">
+								</div>
+								</div>
+						</li>
+						<li data-date="15/09/2017" class="d-flex">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum obcaecati nisi aut cumque error! Eum veritatis minima excepturi voluptates doloribus consectetur minus error culpa, cumque soluta, corrupti hic, vel quas.</p>
+								</div>
+								<div class="col-md-7">
+									<img src="./img/MERCENARIO 24.png" class="rounded m-r-15" alt="" width="418" height="557">
+								</div>
+								</div>
+						</li>
+						<li data-date="01/11/2017" class="d-flex">
+							<div class="row w-100">
+								<div class="col-md-5">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptas, excepturi nihil, porro consequatur dignissimos eius voluptate, cupiditate vitae illum architecto nam eaque commodi ducimus eligendi recusandae in. Quaerat, porro.</p>
+								</div>
+								<div class="col-md-7">
+									<img src="./img/galeria3.png" class="rounded m-r-15" alt="" width="418" height="557">
+								</div>
+								</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--  <footer>
 																																														        <div class="container-md-fluid flex-column d-flex">
 																																														            <h2 class="titleh2 animado">TEAM</h2>
 																																														            <div class="row ">
@@ -819,168 +554,191 @@
 																																														            </div>
 																																														        </div>
 																																														    </footer>-->
-		<section class="footer">
-			<h2>TEAM</h2>
-			<div class="row w-100  ">
-				<div class="col-1"></div>
-				<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
-					<div class="img-ul">
-						<img class="img-footer" src="https://previews.123rf.com/images/yupiramos/yupiramos1607/yupiramos160706379/59683887-hombre-de-negocios-con-elegante-traje-y-corbata-de-dibujos-animados-ejemplo-gr%C3%A1fico-del-vector.jpg" alt="Imagen 1" width="150" height="150">
-						<ul class="ulllll">
-							<h4>Jhonatan Manrique</h4>
-							<h5>Founder</h5>
-							<li>
-								<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-linkedin"></i>
-								</a>
-							</li>
+	<section class="footer py-0">
+		<h2>TEAM</h2>
+		<div class="row w-100  ">
+			<div class="col-1"></div>
+			<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
+				<div class="img-ul">
+					<img class="img-footer"
+						src="https://previews.123rf.com/images/yupiramos/yupiramos1607/yupiramos160706379/59683887-hombre-de-negocios-con-elegante-traje-y-corbata-de-dibujos-animados-ejemplo-gr%C3%A1fico-del-vector.jpg"
+						alt="Imagen 1" width="150" height="150">
+					<ul class="ulllll">
+						<h4>Jhonatan Manrique</h4>
+						<h5>Founder</h5>
+						<li>
+							<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</li>
 
-						</ul>
-					</div>
+					</ul>
 				</div>
-				<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
-					<div class="img-ul">
-						<img class="img-footer" src="https://img.freepik.com/vector-premium/hombre-traje-corbata_503750-1387.jpg" alt="Imagen 2" width="150" height="150">
-						<ul class="ulllll">
-							<h4>Julio Rodrigo</h4>
-							<h5>Studio</h5>
-							<li>
-								<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-linkedin"></i>
-								</a>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-				<div class="col-1"></div>
 			</div>
-			<div class="row w-100  ">
-				<div class="col-1"></div>
-				<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
-					<div class="img-ul">
-						<img class="img-footer" src="https://static.vecteezy.com/system/resources/previews/011/690/600/non_2x/man-in-suit-and-tie-illustration-vector.jpg" alt="Imagen 3" width="150" height="150">
-						<ul class="ulllll">
-							<h4>Jacinto Martinez</h4>
-							<h5>Marketing</h5>
-							<li>
-								<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-linkedin"></i>
-								</a>
-							</li>
+			<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
+				<div class="img-ul">
+					<img class="img-footer"
+						src="https://img.freepik.com/vector-premium/hombre-traje-corbata_503750-1387.jpg" alt="Imagen 2"
+						width="150" height="150">
+					<ul class="ulllll">
+						<h4>Julio Rodrigo</h4>
+						<h5>Studio</h5>
+						<li>
+							<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</li>
 
-						</ul>
-					</div>
+					</ul>
 				</div>
-				<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
-					<div class="img-ul">
-						<img class="img-footer" src="https://previews.123rf.com/images/yupiramos/yupiramos1607/yupiramos160706378/59683883-hombre-de-negocios-con-elegante-traje-y-corbata-de-dibujos-animados-ejemplo-gr%C3%A1fico-del-vector.jpg" alt="Imagen 4" width="150" height="150">
-						<ul class="ulllll">
-							<h4>Martín Zulema</h4>
-							<h5>Developer</h5>
-							<li>
-								<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
-									<i class="bi bi-linkedin"></i>
-								</a>
-							</li>
+			</div>
+			<div class="col-1"></div>
+		</div>
+		<div class="row w-100  ">
+			<div class="col-1"></div>
+			<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
+				<div class="img-ul">
+					<img class="img-footer"
+						src="https://static.vecteezy.com/system/resources/previews/011/690/600/non_2x/man-in-suit-and-tie-illustration-vector.jpg"
+						alt="Imagen 3" width="150" height="150">
+					<ul class="ulllll">
+						<h4>Jacinto Martinez</h4>
+						<h5>Marketing</h5>
+						<li>
+							<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</li>
 
-						</ul>
-					</div>
+					</ul>
 				</div>
-				<div class="col-1"></div>
 			</div>
-		</section>
-		<section class="container py-4">
-			<div class="">
-				<h2 class="text-md-center">Preguntas Frecuentes</h2>
-				<p class="text-md-center">
-					Esta página da respuesta a preguntas habituales que hacen los clientes y que surgirán antes, durante y al final del proceso de compra.
-				</p>
+			<div class="col-md-5 d-flex flex-column justify-content-md-center align-items-center">
+				<div class="img-ul">
+					<img class="img-footer"
+						src="https://previews.123rf.com/images/yupiramos/yupiramos1607/yupiramos160706378/59683883-hombre-de-negocios-con-elegante-traje-y-corbata-de-dibujos-animados-ejemplo-gr%C3%A1fico-del-vector.jpg"
+						alt="Imagen 4" width="150" height="150">
+					<ul class="ulllll">
+						<h4>Martín Zulema</h4>
+						<h5>Developer</h5>
+						<li>
+							<a href="https://www.instagram.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
 			</div>
-			<div class="accordion accordion-flush" id="accordionFlushExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-							¿Que es Solst1?
-						</button>
-					</h2>
-					<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body">
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti officiis quisquam at praesentium voluptatum tenetur, enim maiores explicabo sapiente nam! Tempore aperiam officia ad deserunt consequatur iure repellat magni autem.</p>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-							¿Que es Solst2?
-						</button>
-					</h2>
-					<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam iste earum assumenda, reiciendis debitis temporibus velit, eum provident sapiente laudantium nam dolores nobis alias blanditiis enim magnam. Voluptatum, velit nam.</p>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-							¿Que es Solst3?
-						</button>
-					</h2>
-					<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-						<p class="accordion-body">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat temporibus doloribus aperiam veritatis fugit dignissimos quis ducimus enim pariatur quidem veniam ab, officiis magnam nisi iste nemo optio ratione.
-						</p>
+			<div class="col-1"></div>
+		</div>
+	</section>
+	<section class="container py-5">
+		<div class="">
+			<h2 class="text-md-center">Preguntas Frecuentes</h2>
+			<p class="text-md-center">
+				Esta página da respuesta a preguntas habituales que hacen los clientes y que surgirán antes, durante y
+				al final del proceso de compra.
+			</p>
+		</div>
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						¿Que es Solst1?
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti officiis quisquam at
+							praesentium voluptatum tenetur, enim maiores explicabo sapiente nam! Tempore aperiam officia
+							ad deserunt consequatur iure repellat magni autem.</p>
 					</div>
 				</div>
 			</div>
-		</section>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						¿Que es Solst2?
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam iste earum assumenda,
+						reiciendis debitis temporibus velit, eum provident sapiente laudantium nam dolores nobis alias
+						blanditiis enim magnam. Voluptatum, velit nam.</p>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+						¿Que es Solst3?
+					</button>
+				</h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse"
+					data-bs-parent="#accordionFlushExample">
+					<p class="accordion-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat temporibus doloribus
+						aperiam veritatis fugit dignissimos quis ducimus enim pariatur quidem veniam ab, officiis magnam
+						nisi iste nemo optio ratione.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		<video src="./assets/videosolt.mp4" id="videosolt" controls autoplay muted loop></video>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>-->
+	<video src="./assets/videosolt.mp4" id="videosolt" controls autoplay muted loop></video>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>-->
 
-		<script src="./js/index.js"></script>
-		<scrip src="./js/img.js"></script>
-		<script src="./js/roadmap.js"></script>
+	<script src="./js/index.js"></script>
+	<scrip src="./js/img.js"></script>
+	<script src="./js/roadmap.js"></script>
+	<script src="./js/videosolst.js"></script>
 
-	</body>
+</body>
+
 </html>
