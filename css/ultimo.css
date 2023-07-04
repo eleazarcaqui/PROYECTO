@@ -341,29 +341,131 @@ z-index: 0;
     font-size: 18px;
     text-transform: uppercase;
 }
+.imagen {
+    display: none;
+  }
+  
+  .showImage {
+    display: block;
+  }
 
-.button {
-    margin: 0;
-    padding-top: 25px;
-    background-color: #000000f3;
-    color: white;
-    text-decoration: none;
-    text-align: right;
-    text-transform: uppercase;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+
+/** Road map */
+/* Estilo para el contenido oculto */
+#timeline .content {
+    display: none;
+  }
+  
+  /* Estilo para el contenido visible */
+  #timeline .content.active {
+    display: flex;
+  }
+  
+  /* Estilo para el título activo */
+  #timeline .title.active {
+    font-weight: bold;
+    /* Agrega cualquier estilo adicional que desees */
+  }
+
+
+.contenido .lista {
+	list-style: none;
+	border-left: 8px solid rgb(25, 95, 191);
+	padding-left: 10px;
+	margin-left: 10px;
+	height: 900px;
     align-items: center;
-    justify-content: center;
+}
+.contenido .lista .title {
+	position: relative;
+}
+.bi:hover{
+    color: gold;
+}
+.item {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .title {
+    margin-left: 10px;
+ 
+  }
+
+ .image-wrapper {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  .image {
+    display: grid;
+    grid-column: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.button:hover {
-    background-color: rgba(0, 0, 205, 0.696);
+.timeline-title {
+    position: relative;
 }
 
-.section-map {
-    background-color: blue;
+.timeline-title h3 {
+    display: block;
+    color: #ddd9d9;
+    padding: 15px 10px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    margin-bottom: 50px;
+    cursor: pointer;
+  
 }
 
+.timeline-title::before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: #b6b6b8;
+    border: 2px solid black;
+    position: absolute;
+    left: -24px;
+    top: calc(50% - 6px);
+    transform: rotate(45deg);
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+.timeline-content {
+    display: none;
+    padding: 10px;
+}
+
+.timeline-image {
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+.timeline-title.active::before {
+    background: #da6f6f;
+    border: 2px solid black;
+}
+
+.timeline-title.active h3 {
+    background-color: #da6f6f;
+}
 
 /*fin main*/
 
