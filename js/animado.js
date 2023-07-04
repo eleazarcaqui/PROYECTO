@@ -55,3 +55,21 @@ document.querySelectorAll('#temario .lista a').forEach((elemento) => {
 	});
 });
 
+window.addEventListener('DOMContentLoaded', function() {
+  var typingContainer = document.querySelector('.card-description');
+  var text = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis accusamus pariatur eaque sapiente quia laudantium enim facere obcaecati adipisci dignissimos quam voluptas nostrum. dolore ipsam reprehenderit voluptates praesentium perferendis i?';
+  var speed = 50; // Velocidad de escritura en milisegundos
+  var index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      typingContainer.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, speed);
+    } else {
+      typingContainer.querySelector('.cursor').style.display = 'inline-block';
+    }
+  }
+
+  typeWriter();
+});
