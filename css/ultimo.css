@@ -270,6 +270,16 @@
     display: inline-block;
     color: #fff;
   }
+
+  .fixed-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .fixed-icon:hover{
+    opacity: 0.7;
+    color: #fff;
+  }
 /*fin  hero*/
 
 
