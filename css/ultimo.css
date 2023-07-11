@@ -397,14 +397,18 @@
 
 .contenido .lista {
 	list-style: none;
-	border-left: 8px solid rgb(25, 95, 191);
-	padding-left: 10px;
-	margin-left: 10px;
-	height: 900px;
+	border-left: 10px solid rgb(25, 95, 191);
+	padding-left: 24px;
+	margin-left: 24px;
+	height: 850px;
     align-items: center;
 }
 .contenido .lista .title {
 	position: relative;
+}
+
+.bi{
+font-size: 35px;
 }
 .bi:hover{
     color: gold;
@@ -417,7 +421,15 @@
   
   .title {
     margin-left: 10px;
+    font-size: 20px;
+    
  
+  }
+
+  .content-accordion{
+   margin: 0;
+    font-size: 20px;
+    color: #fff;
   }
 
  .image-wrapper {
@@ -437,7 +449,13 @@
     max-width: 100%;
     height: auto;
   }
-
+  .content-img{
+margin: 0;
+padding: 0;
+color: #fff;
+border-radius: 5%;
+    border: 1px solid #121cdf;
+  }
 
 .timeline-item {
     display: flex;
@@ -455,20 +473,24 @@
     padding: 15px 10px;
     text-decoration: none;
     transition: 0.3s ease all;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     cursor: pointer;
   
 }
+.timeline-title h3:hover{
+    opacity: 0.7;
+}
 
-.timeline-title::before {
+.title::before {
     content: "";
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     background: #b6b6b8;
     border: 2px solid black;
+    border-radius: 50%;
     position: absolute;
-    left: -24px;
+    left: -55px;
     top: calc(50% - 6px);
     transform: rotate(45deg);
     transition: 0.3s ease all;
@@ -480,18 +502,17 @@
     padding: 10px;
 }
 
-.timeline-image {
-    margin-left: 20px;
-    max-width: 200px;
+
+.title.active::before {
+    background: #121cdf;
+    border: 2px solid #ffffff;
 }
 
-.timeline-title.active::before {
-    background: #da6f6f;
-    border: 2px solid black;
-}
-
-.timeline-title.active h3 {
-    background-color: #da6f6f;
+.timeline-title.active .content-title {
+    background-color: rgba(0, 47, 255, 0.279);
+    border-radius: 10%;
+    border:2px solid #121cdf;
+    margin: 0;
 }
 
 /*fin main*/
